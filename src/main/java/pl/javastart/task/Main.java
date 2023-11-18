@@ -13,9 +13,17 @@ public class Main {
         Firma janNowakServices = new Firma("Jan Nowak IT Services", new RyczaltEwidencjonowany());
 
         janNowakServices.dodajPrzychod("Programowanie", 15_000);
+        janNowakServices.dodajPrzychod("Programowanie", 15_000);
         janNowakServices.dodajWydatek("Energetyki", 200);
 
         janNowakServices.wyswietlPodsumowanie();
+
+        Firma fabryka = new Firma("Bodzio", new PodatekWgSkali());
+
+        fabryka.dodajPrzychod("Dostawa mebli", 150_000);
+        fabryka.dodajWydatek("Zakup drewna", 20_000);
+
+        fabryka.wyswietlPodsumowanie();
     }
 
 }
